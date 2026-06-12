@@ -69,7 +69,7 @@ url-shortener/
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/url-shortener.git
+git clone https://github.com/Deshikagupta/url-shortener.git
 cd url-shortener
 ```
 
