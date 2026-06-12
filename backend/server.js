@@ -5,7 +5,16 @@ require("dotenv").config();
 
 const app = express();
 
-app.use(cors());
+
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",
+      "https://url-shortener-sigma-sable.vercel.app",
+    ],
+  })
+);
+
 app.use(express.json());
 
 const urlRoutes = require("./routes/urlRoutes");

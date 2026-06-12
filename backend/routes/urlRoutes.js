@@ -31,7 +31,7 @@ router.post("/api/shorten", async (req, res) => {
     }
 
     const shortCode = nanoid(6);
-    const shortUrl = `http://localhost:5001/${shortCode}`;
+    shortUrl: `${req.protocol}://${req.get("host")}/${shortCode}`
 
     const newUrl = await Url.create({
       originalUrl,
